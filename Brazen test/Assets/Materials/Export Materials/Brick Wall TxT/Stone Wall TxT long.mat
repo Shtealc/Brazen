@@ -14,8 +14,6 @@ Material:
   m_ValidKeywords:
   - _DETAIL_MULX2
   - _GLOSSYREFLECTIONS_OFF
-  - _METALLICGLOSSMAP
-  - _PARALLAXMAP
   m_InvalidKeywords:
   - _DETAIL_SCALED
   - _METALLICSPECGLOSSMAP
