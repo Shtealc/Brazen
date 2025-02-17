@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 976
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 40
+  controlID: 39
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 41
+  controlID: 40
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -650,9 +650,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.6579685, y: 81.448944, z: -11.97397}
+    m_Target: {x: -5.541314, y: 31.925406, z: -241.47824}
     speed: 2
-    m_Value: {x: 6.6579685, y: 81.448944, z: -11.97397}
+    m_Value: {x: -5.541314, y: 31.925406, z: -241.47824}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -698,13 +698,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.188595, y: -0.22309475, z: 0.044392034, w: 0.956264}
+    m_Target: {x: 0.18486401, y: -0.023944536, z: 0.0041300054, w: 0.98339486}
     speed: 2
-    m_Value: {x: 0.18847439, y: -0.22194412, z: 0.04416477, w: 0.95565045}
+    m_Value: {x: 0.18567748, y: -0.023918498, z: 0.0041502398, w: 0.98231083}
   m_Size:
-    m_Target: 10
+    m_Target: 15.037328
     speed: 2
-    m_Value: 9.999999
+    m_Value: 15.037328
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -766,9 +766,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b0590000
+      m_SelectedIDs: 9c620000
       m_LastClickedID: 0
-      m_ExpandedIDs: e0edffffa8f8ffff30fbffff805a0000d85a0000
+      m_ExpandedIDs: f2f8ffff30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1005,7 +1005,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials/Export Materials/Brick Wall TxT
+    - Assets/models/ball
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1021,7 +1021,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: de6e0000
     m_LastClickedID: 28382
-    m_ExpandedIDs: 00000000a25b0000a45b0000a65b0000a85b0000
+    m_ExpandedIDs: 00000000ba5b0000bc5b0000be5b0000c05b0000c25b0000c45b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1046,10 +1046,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 31}
+    scrollPos: {x: 0, y: 45.99948}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000a25b0000a45b0000a65b0000a85b0000da5b0000185c0000
+    m_ExpandedIDs: ffffffff00000000ba5b0000c05b000090620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
