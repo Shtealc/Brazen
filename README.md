@@ -8,7 +8,7 @@ Every item and texture found in Brazen was 100% created by both artists, Lee and
 Fire and Golden Twine Particles were made and implemented by Dae. 
 ## Code Requirements
 All code was implemented by Jazmine Ashley. 
-The Minotaur utilizes NavMesh to navigate the Labryinthe, and an Audio listener in order to hear the Player's footsteps when they choose to sprint, as well as spot the player when in line of sight. This enables the Minotaur to stay relatively close by to the Player once out of the Starting Area, and to chase when the Player is in sight. 
+The Minotaur utilizes NavMesh to navigate the Labryinthe, and a detection radius in order to "hear" the Player's footsteps when they choose to sprint, as well as spot the player when in line of sight. This enables the Minotaur to stay relatively close by to the Player once out of the Starting Area, and to chase when the Player is in sight. 
 The game is pausable when hitting the ESC key, which displays the Pause menu. From there the Player can navigate to Options, Quit the Game, or Restart. Within the Options menu are the abilities to enable Immortal Mode, and Infinite Twine Mode. 
 Our main mechanic is the Golden Twine, which serves as a pickup the player can use to navigate and find their way through the maze.
 ## Tech Requirements
