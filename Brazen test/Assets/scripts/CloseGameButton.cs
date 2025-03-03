@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuitGame : MonoBehaviour
+public class CloseGameButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,12 +13,14 @@ public class QuitGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
 
-    public void Quitgame()
+       public void CloseGame()
+
     {
+
         Application.Quit();
-        print("It should work");
+
     }
 }
