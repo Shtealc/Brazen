@@ -86,7 +86,7 @@ public class FirstPersonPlayer : MonoBehaviour
         // Normal health
         else
         {
-            twineCount = 0;
+            //twineCount = 0;
             maxTwine = 10;
         }
     }
