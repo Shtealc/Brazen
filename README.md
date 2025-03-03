@@ -9,7 +9,7 @@ Fire and Golden Twine Particles were made and implemented by Dae.
 ## Code Requirements
 All code was implemented by Jazmine Ashley. 
 The Minotaur utilizes NavMesh to navigate the Labryinthe, and a detection radius in order to "hear" the Player's footsteps when they choose to sprint, as well as spot the player when in line of sight. This enables the Minotaur to stay relatively close by to the Player once out of the Starting Area, and to chase when the Player is in sight. 
-The game is pausable when hitting the ESC key, which displays the Pause menu. From there the Player can navigate to Options, Quit the Game, or Restart. Within the Options menu are the abilities to enable Immortal Mode, and Infinite Twine Mode. 
+The game is pausable when hitting the ESC key, which displays the Pause menu. From there the Player can navigate to Options, Quit the Game, or Restart. Within the Options menu are the abilities to enable Slow Bull Mode, and Infinite Twine Mode. 
 Our main mechanic is the Golden Twine, which serves as a pickup the player can use to navigate and find their way through the maze.
 ## Tech Requirements
 There are three distinct areas for the Player, one of which the Minotaur should never be able to enter at the beginning of the game. The Starting Area contains the Gate, which is where the Player will need to return to once aquiring the Key. The Labryinthe is the maze that both the Player and the Minotaur will wander, and then the Key Room is where the Key can be found. 
