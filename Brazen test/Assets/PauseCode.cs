@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour
     void Update()
     {
         // Toggle pause when pressing escape
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             if (isPaused)
             {

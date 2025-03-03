@@ -119,6 +119,19 @@ public class MinotaurAI : MonoBehaviour
             case MinotaurState.Recovering:
                 break;
         }
+        if (PlayerPrefs.GetInt("SlowBull", 0) == 1)
+        {
+            chargeSpeed = 2f;
+            wanderSpeed = 2f;
+            searchSpeed = 2f;
+        }
+        // Normal health
+        else
+        {
+            chargeSpeed = 10f;
+            wanderSpeed = 2f;
+            searchSpeed = 8f;
+        }
     }
 
     void StartListening()
