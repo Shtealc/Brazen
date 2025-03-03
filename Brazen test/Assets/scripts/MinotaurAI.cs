@@ -59,7 +59,7 @@ public class MinotaurAI : MonoBehaviour
                 if (CanSeePlayer())
                 {
                     // If sees player, prepare to charge
-                    ChargeDelay();
+                   StartCoroutine(ChargeDelay()); 
                 }
                 else if (PlayerMadeNoise())
                 {
@@ -166,12 +166,18 @@ public class MinotaurAI : MonoBehaviour
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
         float angle = Vector3.Angle(transform.forward, directionToPlayer);
 
+        Vector3 rayStart = transform.position + transform.forward * 1f;
+        Debug.DrawRay(transform.position, directionToPlayer * visionDistance, Color.red, 0.1f);
+
         if (angle < visionAngle / 2f && Vector3.Distance(transform.position, player.position) < visionDistance)
         {
             if (Physics.Raycast(transform.position, directionToPlayer, out RaycastHit hit, visionDistance))
             {
+                Debug.Log("Raycast Hit: " + hit.collider.gameObject.name); 
+
                 if (hit.transform == player)
                 {
+                    Debug.Log("Minotaur sees the player!");
                     return true;
                 }
             }
@@ -202,8 +208,17 @@ public class MinotaurAI : MonoBehaviour
 
     void StartCharge()
     {
+         if (player == null) return;
+
         currentState = MinotaurState.Charging;
-        chargeDirection = transform.forward;
+
+        chargeDirection = (player.position - transform.position).normalized;
+
+        agent.SetDestination(transform.position + chargeDirection * chargeSpeed * chargeDuration);
+
+        agent.isStopped = false;
+        agent.speed = chargeSpeed;
+
         StartCoroutine(ChargeRecovery());
     }
 
