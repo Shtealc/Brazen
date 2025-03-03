@@ -2,21 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HideLockMouse : MonoBehaviour
+public class mousingingit : MonoBehaviour
 {
 
     public bool lockCursor = true;
 
+    private void Start()
+    {
+        Cursor.lockState = lockCursor ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.visible = !lockCursor;
+    }
     void Update()
     {
 
-        // pressing esc toggles between hide/show
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            lockCursor = !lockCursor;
-        }
-
-        Cursor.lockState = lockCursor ? CursorLockMode.Locked : CursorLockMode.None;
-        Cursor.visible = !lockCursor;
+       
     }
 }
