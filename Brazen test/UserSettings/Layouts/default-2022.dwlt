@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 976
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 56
+  controlID: 1009
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 57
+  controlID: 1010
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -651,9 +651,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 495.12622, y: 306.49384, z: -227.32422}
+    m_Target: {x: 470, y: 264.33334, z: 0}
     speed: 2
-    m_Value: {x: 495.12622, y: 306.49384, z: -227.32422}
+    m_Value: {x: 470, y: 264.33334, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -699,13 +699,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.19426006, y: 0.14495888, z: -0.025270412, w: 0.971557}
+    m_Target: {x: 0.13019945, y: -0.86490685, z: 0.3023338, w: 0.38349864}
     speed: 2
-    m_Value: {x: 0.19490889, y: 0.14469397, z: -0.025374312, w: 0.9697578}
+    m_Value: {x: 0.12997267, y: -0.86340034, z: 0.3018072, w: 0.38283065}
   m_Size:
-    m_Target: 288.1895
+    m_Target: 10
     speed: 2
-    m_Value: 288.1895
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -767,23 +767,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0c6e0200
-      m_LastClickedID: 159244
-      m_ExpandedIDs: bc60feff3461feff566afefff679feff887afeffb07bfeffb87bfeffba7bfeff107cfeff488cfeff948cfeff1e90feffcc90feff02a0feffdab5feff6eb6feff7ac7feffb8c8feffead2feffa2e3feff1ae4feff20f5feff6af5fefffaf7feff6af8feff7c07ffffa207ffff7289ffffbc89ffff488cffffb48cffffc29bffffe49bffff94e4ffff20e6ffffc6e6ffff02fbfffffe9d0000c29f0000b4a100005aa00100e6a7010034af0100b0050200d6050200be0802003a0a0200e82102000a2202006022020018250200b6260200a02b0200c22b0200242e0200d02e02006e300200b0510200ea510200285202007656020002580200c45d0200e65d02003c600200e06002006c620200946b0200c26e02004e700200
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: da18ffff4a88fffff888ffff8ea7ffff00b7ffffc6bdffff10beffffa2c0ffff0cc1ffff26d0ffff54d0ffff46f1ffff12faffff02fbffffdc8e000068a500008ea50000bac10000b4c20000f0c20000a6c3000032c500003ec5000076d701009cd70100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: how to play
-        m_OriginalName: how to play
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 159346
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -1022,7 +1022,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: de6e0000
     m_LastClickedID: 28382
-    m_ExpandedIDs: 000000000e700000b4730000027400000474000006740000087400000a7400000c7400000e74000010740000127400001474000016740000187400001a7400001c7400001e74000020740000227400002474000026740000
+    m_ExpandedIDs: ffffffff00000000727000001a740000de750000e0750000e2750000e4750000e6750000e8750000ea750000ec750000ee750000f0750000f2750000f4750000f6750000f8750000fa750000fc750000fe7500000076000002760000047600000676000008760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1047,21 +1047,21 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 733.6665}
+    scrollPos: {x: 0, y: 756.00037}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000000e700000b4730000027400000474000006740000087400000a7400000c7400000e74000010740000127400001474000016740000187400001a7400001c7400001e74000020740000227400002474000026740000c2880000cef70000d0f70000
+    m_ExpandedIDs: ffffffff00000000727000001a740000de750000e0750000e2750000e4750000e6750000e8750000ea750000ec750000ee750000f0750000f2750000f4750000f6750000f8750000fa750000fc750000fe750000007600000276000004760000067600000876000080a00000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: game
-      m_OriginalName: game
+      m_Name: SlowBull
+      m_OriginalName: SlowBull
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 35148
+      m_UserData: 30552
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -1181,7 +1181,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 266.66663
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
