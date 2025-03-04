@@ -58,8 +58,7 @@ public class MinotaurAI : MonoBehaviour
                 }
                 if (CanSeePlayer())
                 {
-                    // If sees player, prepare to charge
-                   StartCoroutine(ChargeDelay()); 
+                    StartCoroutine(ChargeDelay()); 
                 }
                 else if (PlayerMadeNoise())
                 {
@@ -119,19 +118,6 @@ public class MinotaurAI : MonoBehaviour
             case MinotaurState.Recovering:
                 break;
         }
-        if (PlayerPrefs.GetInt("SlowBull", 0) == 1)
-        {
-            chargeSpeed = 2f;
-            wanderSpeed = 2f;
-            searchSpeed = 2f;
-        }
-        // Normal health
-        else
-        {
-            chargeSpeed = 10f;
-            wanderSpeed = 2f;
-            searchSpeed = 8f;
-        }
     }
 
     void StartListening()
@@ -167,6 +153,7 @@ public class MinotaurAI : MonoBehaviour
         float angle = Vector3.Angle(transform.forward, directionToPlayer);
 
         Vector3 rayStart = transform.position + transform.forward * 1f;
+
         Debug.DrawRay(transform.position, directionToPlayer * visionDistance, Color.red, 0.1f);
 
         if (angle < visionAngle / 2f && Vector3.Distance(transform.position, player.position) < visionDistance)
@@ -177,13 +164,13 @@ public class MinotaurAI : MonoBehaviour
 
                 if (hit.transform == player)
                 {
-                    Debug.Log("Minotaur sees the player!");
                     return true;
                 }
             }
         }
         return false;
     }
+
 
     bool PlayerMadeNoise()
     {
@@ -192,23 +179,33 @@ public class MinotaurAI : MonoBehaviour
 
     void Wander()
     {
-        Vector3 targetPoint = transform.position + new Vector3(Random.Range(-wanderRadius, wanderRadius), 0, Random.Range(-wanderRadius, wanderRadius));
-        if (NavMesh.SamplePosition(targetPoint, out NavMeshHit navHit, wanderRadius, NavMesh.AllAreas))
+        for (int i = 0; i < 5; i++)
         {
-            agent.destination = navHit.position;
+            Vector3 randomPoint = transform.position + Random.insideUnitSphere * wanderRadius;
+            randomPoint.y = transform.position.y;
+            if (NavMesh.SamplePosition(randomPoint, out NavMeshHit navHit, wanderRadius, NavMesh.AllAreas))
+            {
+                agent.destination = navHit.position;
+                return;
+            }
         }
     }
 
+
     IEnumerator ChargeDelay()
     {
+        Debug.Log("Preparing to charge...");
+
         PlaySound(chargeSound, false);
+
         yield return new WaitForSeconds(chargeDelay);
+
         StartCharge();
     }
 
     void StartCharge()
     {
-         if (player == null) return;
+        if (player == null) return;
 
         currentState = MinotaurState.Charging;
 
